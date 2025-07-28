@@ -1,3 +1,8 @@
+import os
+
+os.environ["STREAMLIT_GATHER_USAGE_STATS"] = "false"
+os.environ["HOME"] = os.getcwd()
+
 import streamlit as st
 import fastf1 as ff1
 from fastf1 import plotting
